@@ -1,9 +1,7 @@
 from fastapi import FastAPI
 import model
 
-app = FastAPI(
-    docs_url='/'
-)
+app = FastAPI()
 
 @app.get('/api/{message}')
 async def getMessage(message):
